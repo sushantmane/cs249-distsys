@@ -27,7 +27,7 @@ public class AbdServerMain {
             server.awaitTermination();
             throw new InterruptedException();
         } catch (IOException e) {
-            LOG.error("Unable to start the server: " + e.getMessage());
+            LOG.error("Unable to start the server: " + e.getCause());
         } catch (InterruptedException e) {
             LOG.error("Server failed to wait for termination. Please restart the server.");
         }
