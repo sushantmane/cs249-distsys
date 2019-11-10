@@ -31,7 +31,7 @@ public class ABDClient {
         WRITE
     }
 
-    private static final Logger LOG = LoggerFactory.getLogger(AbdClientMain.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ABDClient.class);
     // timeout in millis for latch
     private static int timeout = 120 * 1000;
     // timeout for each rpc
